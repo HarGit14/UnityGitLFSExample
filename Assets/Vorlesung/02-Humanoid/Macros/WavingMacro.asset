@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: WavingMacro
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-11.51749,"y":295.9086},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"key":{"$content":"Alpha1","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Ludiq.PressState"}},"position":{"x":-415.0,"y":-80.0},"guid":"7130a2ca-72bd-4fbf-9aac-158296b9177b","$version":"A","$type":"Bolt.OnKeyboardInput","$id":"9"},{"chainable":false,"member":{"name":"SetTrigger","parameterTypes":["System.String"],"targetType":"UnityEngine.Animator","targetTypeName":"UnityEngine.Animator","$version":"A"},"defaultValues":{"target":null,"%name":{"$content":"isWaving","$type":"System.String"}},"position":{"x":13.0,"y":-80.0},"guid":"a522c651-d321-4bfe-979d-2b81041df53f","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"coroutine":false,"defaultValues":{"key":{"$content":"Alpha2","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Ludiq.PressState"}},"position":{"x":-419.0,"y":149.0},"guid":"08f0da6b-9604-4311-a460-eba65ed25d8b","$version":"A","$type":"Bolt.OnKeyboardInput","$id":"14"},{"chainable":false,"member":{"name":"SetBool","parameterTypes":["System.String","System.Boolean"],"targetType":"UnityEngine.Animator","targetTypeName":"UnityEngine.Animator","$version":"A"},"defaultValues":{"target":null,"%name":{"$content":"isDancing","$type":"System.String"},"%value":{"$content":false,"$type":"System.Boolean"}},"position":{"x":155.0,"y":148.0},"guid":"9c7fc7e0-7990-493a-8df9-65f4ce00238a","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"chainable":false,"member":{"name":"GetBool","parameterTypes":["System.String"],"targetType":"UnityEngine.Animator","targetTypeName":"UnityEngine.Animator","$version":"A"},"defaultValues":{"target":null,"%name":{"$content":"isDancing","$type":"System.String"}},"position":{"x":-227.0,"y":321.0},"guid":"a12e211a-b684-4de4-9eac-a2633ec43fc4","$version":"A","$type":"Bolt.InvokeMember","$id":"19"},{"defaultValues":{},"position":{"x":2.0,"y":340.0},"guid":"d5a21d6a-464a-43c7-94f2-bf8d26d8b438","$version":"A","$type":"Bolt.Negate","$id":"22"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"461a38af-def3-4066-a8a2-ae533eb0131d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"1b7b4abd-e247-4d4a-8fe1-64a30ac57129","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"output","destinationUnit":{"$ref":"16"},"destinationKey":"%value","guid":"7ff50864-2857-47a4-8ee8-5fdb75589aec","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"22"},"destinationKey":"input","guid":"c457b246-f332-48ec-bceb-c5561bff5f4e","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
